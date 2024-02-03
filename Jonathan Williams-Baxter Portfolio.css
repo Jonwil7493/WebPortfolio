@@ -1,0 +1,81 @@
+/*Title*/
+h1 {
+    font-size: 50px;
+    font-style: italic;
+}
+
+h3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+div{
+    text-align: center;
+}
+/* Navigation Buttons */
+a.Home, a.Projects{
+    font-size: 25px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    border: 2px solid blue;
+    border-radius: 15px;
+    padding: 5px;
+    width: 100px;
+    margin: auto;
+    color: white;
+}
+
+a.Home:hover, a.Projects:hover{
+    background-color: rgb(68, 68, 244);
+    border: 2px solid rgb(68, 68, 244);
+    color: black;
+    border-radius: 15px;
+    padding: 5px;
+    width: 100px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 2) /* Shadow effect */
+}
+
+/*Home page profile picture */
+img.Profile {
+    height:500px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+
+body {
+    background-color: rgb(150, 187, 223);
+}
+
+div.About{
+    font-style: italic;
+    font-size: 30px;
+    border: 2px solid blue;
+}
+
+h2.Tech{
+    font-style: italic;
+    font-style: bold;
+}
+
+h2.Soft{
+    font-style: italic;
+    font-style: bold;
+}
+
+p.email, p.linkedin, p.Github{
+    font-style: italic;
+    font-size: 25px;
+}
+
+h1.Projects{
+    font-style: italic;
+    font-size: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
