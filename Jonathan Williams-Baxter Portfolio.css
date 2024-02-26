@@ -4,22 +4,24 @@ h1 {
     font-style: italic;
 }
 
-h3{
+h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: auto;
 }
-div{
+
+div {
     text-align: center;
 }
+
 /* Navigation Buttons */
-a.Home, a.Projects{
+a.Home, a.Projects {
     font-size: 25px;
     background-color: blue;
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     border: 2px solid blue;
     border-radius: 15px;
     padding: 5px;
@@ -28,7 +30,7 @@ a.Home, a.Projects{
     color: white;
 }
 
-a.Home:hover, a.Projects:hover{
+a.Home:hover, a.Projects:hover {
     background-color: rgb(68, 68, 244);
     border: 2px solid rgb(68, 68, 244);
     color: rgb(248, 248, 248);
@@ -36,12 +38,12 @@ a.Home:hover, a.Projects:hover{
     padding: 5px;
     width: 100px;
     margin: auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 2) /* Shadow effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Corrected box-shadow value */
 }
 
-/*Home page profile picture */
+/* Home page profile picture */
 img.Profile {
-    height:500px;
+    height: 500px;
     width: 400px;
     border-radius: 50%;
     border: 2px solid blue;
@@ -51,28 +53,26 @@ body {
     background-color: rgb(150, 187, 223);
 }
 
-div.About{
+div.About {
     font-style: italic;
     font-size: 30px;
     border: 2px solid blue;
 }
 
-h2.Tech{
+h2.Tech,
+h2.Soft {
     font-style: italic;
-    font-style: bold;
+    font-weight: bold; /* Changed font-style to font-weight */
 }
 
-h2.Soft{
-    font-style: italic;
-    font-style: bold;
-}
-
-p.email, p.linkedin, p.Github{
+p.email,
+p.linkedin,
+p.Github {
     font-style: italic;
     font-size: 25px;
 }
 
-h1.Projects{
+h1.Projects {
     font-style: italic;
     font-size: 50px;
     align-items: center;
