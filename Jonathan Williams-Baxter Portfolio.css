@@ -47,6 +47,7 @@ img.Profile {
     width: 400px;
     border-radius: 50%;
     border: 2px solid blue;
+    margin-bottom: 15px;
 }
 
 body {
@@ -58,18 +59,8 @@ div.About {
     font-size: 30px;
     border: 2px solid blue;
     border-radius: 15px;
-    opacity: 0;
-    animation: fadeInAnimation 1s ease-in-out forwards;
 }
 
-@keyframes fadeInAnimation {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 h2.Tech,
 h2.Soft {
@@ -90,4 +81,17 @@ h1.Projects {
     align-items: center;
     display: flex;
     justify-content: space-around;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
 }
