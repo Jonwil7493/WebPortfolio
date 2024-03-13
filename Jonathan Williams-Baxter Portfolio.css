@@ -68,11 +68,11 @@ h2.Soft {
     font-weight: bold; /* Changed font-style to font-weight */
 }
 
-p.email,
-p.linkedin,
-p.Github {
+div.Contact {
     font-style: italic;
     font-size: 25px;
+    border: 2px solid blue;
+    border-radius: 15px;
 }
 
 h1.Projects {
@@ -81,6 +81,8 @@ h1.Projects {
     align-items: center;
     display: flex;
     justify-content: space-around;
+    border: 2px solid blue;
+    border-radius: 15px;
 }
 
 #scrollToTopBtn {
