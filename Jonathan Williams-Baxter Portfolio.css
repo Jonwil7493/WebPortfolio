@@ -47,7 +47,7 @@ img.Profile {
     width: 400px;
     border-radius: 50%;
     border: 2px solid blue;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 body {
@@ -55,17 +55,36 @@ body {
 }
 
 div.About {
+    background-color: lightgray;
     font-style: italic;
     font-size: 30px;
+    margin-left: 175px;
+    margin-right: 175px;
+    margin-bottom: 50px;
     border: 2px solid blue;
     border-radius: 15px;
+    padding: 50px;
 }
 
+p.About2 {
+    display: inline-block;
+    border-top: black 2px solid;
+    margin: 5px;
+    padding-top: 5px;
+}
 
 h2.Tech,
 h2.Soft {
     font-style: italic;
     font-weight: bold; /* Changed font-style to font-weight */
+    /* add a line to the bottom of the heading */
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    font-size: 50px;
 }
 
 div.Contact {
@@ -73,9 +92,12 @@ div.Contact {
     font-size: 25px;
     border: 2px solid blue;
     border-radius: 15px;
+    margin-left: 175px;
+    margin-right: 175px;
+    background-color: lightgray;
 }
 
-h1.Projects {
+div.Projects {
     font-style: italic;
     font-size: 50px;
     align-items: center;
@@ -83,6 +105,10 @@ h1.Projects {
     justify-content: space-around;
     border: 2px solid blue;
     border-radius: 15px;
+    background-color: lightgray;
+    margin-left: 175px;
+    margin-right: 175px;
+    margin-bottom: 50px;
 }
 
 #scrollToTopBtn {
