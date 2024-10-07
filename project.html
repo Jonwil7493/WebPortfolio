@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="Jonathan Williams-Baxter Portfolio.css">
+</head>
+<body>
+    <div class="Navigation">
+        <h3>
+            <a class="Home" href="index.html">Home</a>
+            <a class="Projects" href="project.html">Projects</a>
+        </h3>
+    </div>
+
+    <h2>Projects</h2>
+
+        <!-- Projects lists -->
+        <div class="Projects">
+            <ul class="Project-list">
+                <li><a href="https://github.com/Jonwil7493/RedBallSurvey/tree/main"><img src="RB_pizza.png" alt="RedBallSurvey">Red Ball Survey</a></li>
+                <li><a href="https://github.com/Jonwil7493/Music-player"><img src="Music_player_app.png" alt="Music player app">AI Music Player</a></li>
+            </ul>
+        </div>
+
+        <div class="Contact">
+            <h2>Contact</h2>
+            <p class="linkedin"> LinkedIn: <a href="www.linkedin.com/in/jonathan-williams-baxter" >Jonathan-williams-baxter</a></p>
+            <p class="email">Email: <a href="mailto:Jwilliamsbaxter@gmail.com">Jwilliamsbaxter@gmail.com</a></p>
+            <p class="Github">Github: <a href="https://github.com/Jonwil7493">Jonwil7493</a"></p>
+        </div>
+
+    <!-- Scroll to top button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
+
+    <script>
+        // Show/hide scroll to top button based on scroll position
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        // Scroll to top function
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    </body>
+</html>
