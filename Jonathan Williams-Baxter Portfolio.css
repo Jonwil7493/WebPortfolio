@@ -134,7 +134,7 @@ div.Projects {
     margin-left: 175px;
     margin-right: 175px;
     margin-bottom: 50px;
-    max-width: 50%;
+    max-width: auto;
 }
 
 ul.Project-list{
