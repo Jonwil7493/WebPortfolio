@@ -2,6 +2,8 @@
 h1 {
     font-size: 50px;
     font-style: italic;
+    text-align: center;
+    
 }
 
 h3 {
@@ -49,6 +51,15 @@ img.Profile {
     border: 2px solid blue;
     margin-bottom: 10px;
 }
+/* project images should be adjusted to fit the page */
+img.RB_pizza {
+    height: auto;
+    max-width: auto;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid blue;
+    margin-bottom: 10px;
+}
 
 body {
     background-color: rgb(150, 187, 223);
@@ -72,6 +83,8 @@ p.About2 {
     margin: 5px;
     padding-top: 5px;
 }
+
+
 
 h2.Tech,
 h2.Soft {
@@ -109,6 +122,7 @@ div.Projects {
     margin-left: 175px;
     margin-right: 175px;
     margin-bottom: 50px;
+    list-style: none;
 }
 
 #scrollToTopBtn {
