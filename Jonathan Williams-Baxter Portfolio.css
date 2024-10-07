@@ -170,3 +170,9 @@ p#Projects_paragraph {
     padding: 10px;
     cursor: pointer;
 }
+
+h2#Projects {
+    font-size: 50px;
+    font-style: italic;
+    border-bottom: black 2px solid;
+}
