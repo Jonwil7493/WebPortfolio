@@ -1,10 +1,10 @@
-/*Title*/
+/* Title */
 h1 {
     font-size: 50px;
     font-style: italic;
     text-align: center;
     margin: auto;
-    border-bottom: black 2px solid;
+    border-bottom: black 4px solid;
     max-width: 75%;
 }
 
@@ -31,26 +31,25 @@ div {
 a.Home, a.Projects {
     font-size: 25px;
     background-color: blue;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: inline-block; /* Changed from flex to inline-block */
+    justify-content: center; /* Center the text */
+    align-items: center; /* Center the text */
     border: 2px solid blue;
     border-radius: 15px;
-    padding: 5px;
-    width: 100px;
-    margin: auto;
+    padding: 10px; /* Increase padding for better click area */
+    width: 120px; /* Adjust width to accommodate text */
+    margin: 15px;
     color: white;
+    text-align: center; /* Center text inside button */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
 }
 
 a.Home:hover, a.Projects:hover {
     background-color: rgb(68, 68, 244);
     border: 2px solid rgb(68, 68, 244);
     color: rgb(248, 248, 248);
-    border-radius: 15px;
-    padding: 5px;
-    width: 100px;
-    margin: auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Corrected box-shadow value */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add box-shadow */
 }
 
 /* Home page profile picture */
@@ -61,15 +60,15 @@ img.Profile {
     border: 2px solid blue;
     margin-bottom: 10px;
 }
-/* project images should be adjusted to fit the page */
+
+/* Project images should be adjusted to fit the page */
 img.RB_pizza, img.Music_player_app {
     height: auto;
-    max-width: auto;
+    max-width: 100%; /* Change to 100% for responsiveness */
     display: block;
-    border-radius: 50%;
+    border-radius: 15px; /* Changed from 50% to 15px for a different shape */
     border: 2px solid blue;
     margin-bottom: 10px;
-    list-style: none;
 }
 
 body {
@@ -95,21 +94,17 @@ p.About2 {
     padding-top: 5px;
 }
 
-
-
 h2.Tech,
 h2.Soft {
     font-size: 30px;
     font-style: italic;
-    font-weight: bold; /* Changed font-style to font-weight */
-    /* add a line to the bottom of the heading */
+    font-weight: bold;
     position: relative;
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
-    font-size: 50px;
 }
 
 div.Contact {
@@ -139,7 +134,7 @@ div.Projects {
     max-width: 75%;
 }
 
-ul.Project-list{
+ul.Project-list {
     list-style: none;
     font-size: 25px;
 }
