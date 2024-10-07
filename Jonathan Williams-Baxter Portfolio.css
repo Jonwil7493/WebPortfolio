@@ -152,6 +152,7 @@ p#Projects_paragraph {
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
+    width: 50%;
 }
 
 #scrollToTopBtn {
