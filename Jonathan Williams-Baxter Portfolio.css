@@ -28,6 +28,10 @@ div {
     text-align: center;
 }
 
+div.Projects {
+    overflow: hidden;
+}
+
 /* Navigation Buttons */
 a.Home, a.Projects {
     font-size: 25px;
@@ -61,22 +65,63 @@ img.Profile {
 }
 
 /* Project Images */
-img.RB_pizza, img.Music_player_app {
+img.RB_pizza, img.Music_player_app, img.Budgeting_Tool, img.DiceRollerApp {
     max-width: 100%;
+    width: auto;
     height: auto;
     display: block;
     border-radius: 15px;
-    border: 2px solid blue;
+    border: 2px solid rgb(0, 0, 0);
     margin-bottom: 10px;
+    margin: 0 auto;
+    padding: 0 10px;
+    object-fit: cover;
 }
 
 /* General Styles for Larger Screens (Desktops) */
 body {
-    background-color: rgb(150, 187, 223);
+    background-color: rgb(55, 136, 218);
+}
+
+p#Projects_paragraph {
+    font-size: 20px;
+}
+
+div.About, div.Contact, div.Projects {
+    border: black 3px solid;
+    background-color: rgb(78, 89, 100);
+    max-width: 100%;
+    width: 75%;
+    margin-left: 188px;
+    padding: 30px;
+}
+
+/* Paragraphs in the About Section */
+div.About p {
+    color: white;
+    font-size: 25px;
+}
+
+/* Headers in the About Section */
+div.About h1, div.About h2, div.About h3 {
+    color: black;
+}
+
+ul.Project-list {
+    list-style: none;
+}
+
+img.DiceRollerApp, img.RB_pizza, img.Budgeting_Tool, img.Music_player_app {
+    margin-top: 25px;
+}
+
+div.Contact p {
+    font-size: 20px;
+    color: white;
 }
 
 /* Media Queries for Tablets */
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
     h1, h2, h3 {
         font-size: 30px;
     }
@@ -87,19 +132,32 @@ body {
     }
 
     div.About, div.Contact, div.Projects {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: auto;
+        margin-right: auto;
         padding: 20px;
+        border: black 2px solid;
+        background-color: rgb(78, 89, 100);
+        width: 90%;
+        max-width: 600px;
+    }
+
+    div.About p {
+        font-size: 20px;
     }
 
     img.Profile {
         height: 300px;
         width: 300px;
     }
+
+    img.RB_pizza, img.Music_player_app, img.Budgeting_Tool, img.DiceRollerApp {
+        max-width: 80%; /* Limit the size more on tablets */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
 
 /* Media Queries for Mobile Phones */
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
     h1, h2, h3 {
         font-size: 25px;
     }
@@ -114,6 +172,11 @@ body {
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
+        background-color: rgb(78, 89, 100);
+    }
+
+    div.About p {
+        font-size: 18px;
     }
 
     img.Profile {
@@ -121,24 +184,24 @@ body {
         width: 200px;
     }
 
-    /* Project images on mobile */
     img.RB_pizza, img.Music_player_app, img.Budgeting_Tool, img.DiceRollerApp {
-        max-width: 100%;
+        max-width: 90%; /* Shrink images on mobile */
         height: auto;
     }
 
     ul.Project-list {
         padding-left: 0;
+        list-style: none;
     }
 
     div.About {
-        background-color: lightgray;
+        background-color: rgb(78, 89, 100);
         font-style: italic;
-        font-size: 20px; /* Reduced font size for mobile */
-        margin: 0 auto;  /* Centering on small devices */
+        font-size: 18px;
+        margin: 0 auto;
         border: 2px solid blue;
         border-radius: 15px;
-        padding: 30px; /* Adjusted padding for mobile */
+        padding: 20px;
     }
 }
 
