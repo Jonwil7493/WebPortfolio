@@ -1,19 +1,19 @@
-/* Title */
-h1 {
+/* General Title and Font Sizes */
+h1, h2, h3 {
     font-size: 50px;
     font-style: italic;
     text-align: center;
     margin: auto;
+}
+
+/* Border for Titles */
+h1 {
     border-bottom: black 4px solid;
     max-width: 75%;
 }
 
 h2 {
     border-bottom: black 2px solid;
-    font-size: 50px;
-    font-style: italic;
-    text-align: center;
-    margin: auto;
 }
 
 h3 {
@@ -23,6 +23,7 @@ h3 {
     margin: auto;
 }
 
+/* Centering Div Content */
 div {
     text-align: center;
 }
@@ -31,28 +32,26 @@ div {
 a.Home, a.Projects {
     font-size: 25px;
     background-color: blue;
-    display: inline-block; /* Changed from flex to inline-block */
-    justify-content: center; /* Center the text */
-    align-items: center; /* Center the text */
+    display: inline-block;
     border: 2px solid blue;
     border-radius: 15px;
-    padding: 10px; /* Increase padding for better click area */
-    width: 120px; /* Adjust width to accommodate text */
+    padding: 10px;
+    width: 120px;
     margin: 15px;
     color: white;
-    text-align: center; /* Center text inside button */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 a.Home:hover, a.Projects:hover {
     background-color: rgb(68, 68, 244);
     border: 2px solid rgb(68, 68, 244);
     color: rgb(248, 248, 248);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add box-shadow */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Home page profile picture */
+/* Profile Picture */
 img.Profile {
     height: 500px;
     width: 400px;
@@ -61,98 +60,89 @@ img.Profile {
     margin-bottom: 10px;
 }
 
-/* Project images should be adjusted to fit the page */
+/* Project Images */
 img.RB_pizza, img.Music_player_app {
+    max-width: 100%;
     height: auto;
-    max-width: 100%; /* Change to 100% for responsiveness */
     display: block;
-    border-radius: 15px; /* Changed from 50% to 15px for a different shape */
+    border-radius: 15px;
     border: 2px solid blue;
     margin-bottom: 10px;
 }
 
+/* General Styles for Larger Screens (Desktops) */
 body {
     background-color: rgb(150, 187, 223);
 }
 
-div.About {
-    background-color: lightgray;
-    font-style: italic;
-    font-size: 30px;
-    margin-left: 175px;
-    margin-right: 175px;
-    margin-bottom: 50px;
-    border: 2px solid blue;
-    border-radius: 15px;
-    padding: 50px;
+/* Media Queries for Tablets */
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 30px;
+    }
+
+    a.Home, a.Projects {
+        width: 80px;
+        font-size: 20px;
+    }
+
+    div.About, div.Contact, div.Projects {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 20px;
+    }
+
+    img.Profile {
+        height: 300px;
+        width: 300px;
+    }
 }
 
-p.About2 {
-    display: inline-block;
-    border-top: black 2px solid;
-    margin: 5px;
-    padding-top: 5px;
+/* Media Queries for Mobile Phones */
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 25px;
+    }
+
+    a.Home, a.Projects {
+        width: 70px;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    div.About, div.Contact, div.Projects {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    img.Profile {
+        height: 200px;
+        width: 200px;
+    }
+
+    /* Project images on mobile */
+    img.RB_pizza, img.Music_player_app, img.Budgeting_Tool, img.DiceRollerApp {
+        max-width: 100%;
+        height: auto;
+    }
+
+    ul.Project-list {
+        padding-left: 0;
+    }
+
+    div.About {
+        background-color: lightgray;
+        font-style: italic;
+        font-size: 20px; /* Reduced font size for mobile */
+        margin: 0 auto;  /* Centering on small devices */
+        border: 2px solid blue;
+        border-radius: 15px;
+        padding: 30px; /* Adjusted padding for mobile */
+    }
 }
 
-h2.Tech,
-h2.Soft {
-    font-size: 30px;
-    font-style: italic;
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid black;
-}
-
-div.Contact {
-    font-style: italic;
-    font-size: 25px;
-    border: 2px solid blue;
-    border-radius: 15px;
-    margin-left: 175px;
-    margin-right: 175px;
-    background-color: lightgray;
-    border-bottom: black 2px solid;
-}
-
-div.Projects {
-    font-style: italic;
-    font-size: 25px;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid blue;
-    border-radius: 15px;
-    background-color: lightgray;
-    margin-top: 25px;
-    margin-left: 175px;
-    margin-right: 175px;
-    margin-bottom: 50px;
-    max-width: 75%;
-}
-
-ul.Project-list {
-    list-style: none;
-    font-size: 25px;
-}
-
-p#Projects_paragraph {
-    text-align: center;
-    font-size: 25px;
-    font-style: italic;
-    position: relative;
-    display: inline-block;
-    margin-left: 425px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid black;
-    max-width: 50%;
-}
-
+/* Scroll to Top Button */
 #scrollToTopBtn {
     display: none;
     position: fixed;
@@ -164,10 +154,4 @@ p#Projects_paragraph {
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
-}
-
-h2#Projects {
-    font-size: 50px;
-    font-style: italic;
-    border-bottom: black 2px solid;
 }
