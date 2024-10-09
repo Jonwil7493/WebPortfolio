@@ -23,6 +23,41 @@ h3 {
     margin: auto;
 }
 
+/*Skills and Technology Section*/
+div.Skills {
+    border: black 3px solid;
+    border-radius: 15px;
+    background-color: rgb(78, 89, 100);
+    max-width: 75%;
+    margin: 10px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+div.Skills h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+    border-bottom: black 2px solid;
+    display: inline-block;
+}
+
+ul.SkillsList {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+}
+
+ul.SkillsList li {
+    display: inline-block;
+    margin: 10px;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
 /* Centering Div Content */
 div {
     text-align: center;
@@ -41,7 +76,7 @@ a.Home, a.Projects {
     border-radius: 15px;
     padding: 10px;
     width: 120px;
-    margin: 15px;
+    margin: 15px auto;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -55,6 +90,25 @@ a.Home:hover, a.Projects:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+/*Container for ecpi logo and profile picture*/
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+/*ECPI Logo*/
+img.ECPILogo {
+    height: 300px;
+    width: auto;
+    margin-right: 50px;
+    padding-left: 30px;
+    padding-bottom: 100px;
+}
+
+
+
 /* Profile Picture */
 img.Profile {
     height: 500px;
@@ -62,6 +116,7 @@ img.Profile {
     border-radius: 50%;
     border: 2px solid blue;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 /* Project Images */
@@ -80,7 +135,7 @@ img.RB_pizza, img.Music_player_app, img.Budgeting_Tool, img.DiceRollerApp {
 
 /* General Styles for Larger Screens (Desktops) */
 body {
-    background-color: rgb(55, 136, 218);
+    background-color: rgb(17, 81, 145);
 }
 
 p#Projects_paragraph {
@@ -89,10 +144,11 @@ p#Projects_paragraph {
 
 div.About, div.Contact, div.Projects {
     border: black 3px solid;
+    border-radius: 15px;
     background-color: rgb(78, 89, 100);
     max-width: 100%;
-    width: 75%;
-    margin-left: 188px;
+    width: 75% ;
+    margin: 10px auto;
     padding: 30px;
 }
 
@@ -115,9 +171,53 @@ img.DiceRollerApp, img.RB_pizza, img.Budgeting_Tool, img.Music_player_app {
     margin-top: 25px;
 }
 
+
 div.Contact p {
     font-size: 20px;
     color: white;
+}
+
+/* Project Block Layout */
+.project-block {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.project-image {
+    max-width: 40%; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.project-description {
+    max-width: 60%;
+    text-align: left;
+}
+
+.project-description h3 {
+    margin-top: 0;
+}
+
+.project-description p {
+    margin-bottom: 10px;
+}
+
+.project-description a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-description a:hover {
+    background-color: darkblue;
 }
 
 /* Media Queries for Tablets */
@@ -145,14 +245,14 @@ div.Contact p {
         font-size: 20px;
     }
 
-    img.Profile {
+    img.Profile, img.ECPILogo {
         height: 300px;
         width: 300px;
     }
 
     img.RB_pizza, img.Music_player_app, img.Budgeting_Tool, img.DiceRollerApp {
-        max-width: 80%; /* Limit the size more on tablets */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 80%;
+        height: auto;
     }
 }
 
@@ -179,13 +279,13 @@ div.Contact p {
         font-size: 18px;
     }
 
-    img.Profile {
+    img.Profile, img.ECPILogo {
         height: 200px;
         width: 200px;
     }
 
     img.RB_pizza, img.Music_player_app, img.Budgeting_Tool, img.DiceRollerApp {
-        max-width: 90%; /* Shrink images on mobile */
+        max-width: 90%;
         height: auto;
     }
 
