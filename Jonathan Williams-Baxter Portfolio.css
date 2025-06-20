@@ -22,6 +22,9 @@ h3 {
     align-items: center;
     margin: auto;
 }
+h4 {
+    color: red;
+}
 
 /*Skills and Technology Section*/
 div.Skills {
